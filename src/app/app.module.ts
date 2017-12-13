@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import {LoginPageComponent} from './pages/login.page.component';
 import {DashboardComponent} from "./components/Dashboard/dashboard.component";
 import {ContactsComponent} from "./components/Dashboard/contacts.component";
+import {PassFormComponent} from './components/Dashboard/pass-form/pass-form.component';
 
 import {AuthenticationService} from "./services/auth.service";
 import {DivisionService} from "./services/division.service";
@@ -18,13 +19,15 @@ import {CountryService} from "./services/country.service";
 import {PositionService} from "./services/position.service";
 import {DepartmentService} from "./services/department.service";
 import {ContactService} from "./services/contact.service";
+import {UserService} from './services/user.service';
 
 @NgModule({
     declarations: [
         AppComponent,
         LoginPageComponent,
         DashboardComponent,
-        ContactsComponent
+        ContactsComponent,
+        PassFormComponent
     ],
     imports: [
         BrowserModule,
@@ -40,7 +43,8 @@ import {ContactService} from "./services/contact.service";
         GenderService,
         CountryService,
         PositionService,
-        DepartmentService
+        DepartmentService,
+        UserService
     ],
     bootstrap: [AppComponent]
 })

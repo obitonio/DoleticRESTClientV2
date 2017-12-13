@@ -3,3 +3,9 @@
 <div ng-message="maxlength">Valeur trop longue</div>
 <div ng-message="email">E-mail non valide</div>
 <div ng-message="number">Caractères alphabétiques non autorisés</div>
+
+<div *ngIf="required">Champ requis</div>
+<div *ngIf="minlength">Valeur trop courte</div>
+<div *ngIf="maxlength">Valeur trop longue</div>
+<div *ngIf="email">E-mail non valide</div>
+<div *ngIf="number">Caractères alphabétiques non autorisés</div>
